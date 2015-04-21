@@ -28,9 +28,10 @@
           {
             echo '<h3>' . $billets['titre'] .' le '. $billets['date_creation']. '</h3>  ';
             echo  '<p>'. $billets['contenu'] .'</p>';
-            echo '<a href="commentaire.php?id_billet='.$billets['id'] .'">'.'commentaires</a>';
+            echo '<a href="commentaire.php?id_billet='. $billets['id'] .'">'.'commentaires</a>';
           }
 
+            $requete->closeCursor();
          ?>         
          
         </body>
